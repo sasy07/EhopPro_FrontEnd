@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "eshop-pro"
+  "defaultProject": "eshop-pro",
+  "cli": {
+    "analytics": false
+  }
 }
