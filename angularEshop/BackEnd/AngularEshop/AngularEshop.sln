@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularEshop.WebApi", "AngularEshop.WebApi\AngularEshop.WebApi.csproj", "{B5EFE8C0-AE1B-4389-B7D6-36BD1CABA461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularEshop.DataLayer", "AngularEshop.DataLayer\AngularEshop.DataLayer.csproj", "{4F209467-1450-4EF5-B2BF-6BE1398ACC58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularEshop.Core", "AngularEshop.Core\AngularEshop.Core.csproj", "{265C2FC6-0129-4332-97E1-D67375E21B44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5EFE8C0-AE1B-4389-B7D6-36BD1CABA461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5EFE8C0-AE1B-4389-B7D6-36BD1CABA461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5EFE8C0-AE1B-4389-B7D6-36BD1CABA461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5EFE8C0-AE1B-4389-B7D6-36BD1CABA461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F209467-1450-4EF5-B2BF-6BE1398ACC58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F209467-1450-4EF5-B2BF-6BE1398ACC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F209467-1450-4EF5-B2BF-6BE1398ACC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F209467-1450-4EF5-B2BF-6BE1398ACC58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{265C2FC6-0129-4332-97E1-D67375E21B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265C2FC6-0129-4332-97E1-D67375E21B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265C2FC6-0129-4332-97E1-D67375E21B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265C2FC6-0129-4332-97E1-D67375E21B44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {316A3791-D4F9-4F9F-99EE-E2DAA778F39C}
+	EndGlobalSection
+EndGlobal
