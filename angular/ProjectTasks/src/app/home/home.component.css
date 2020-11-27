@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+.col {
+  padding: 0.4em 1.3;
+}
+.color-dark {
+  background-color: #2885c4;
+}
+.color-light {
+  background-color: #57b3f1;
+  padding: 0 1em 1em 1em;
+}
+input.text {
+  border: 0;
+  padding: 1em;
+  width: 90%;
+  margin-bottom: 2em;
+}
+input.btn {
+  border: 0;
+  display: block;
+  padding: 1em 3em;
+  background-color: #a5f883;
+  color: #003a61;
+}
+.project-container {
+  background-color: #3fa0e1;
+  padding: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.project-container:hover {
+  background-color: #ff6565;
+}
+.project-container:active{
+  background-color: #aa2828;
+}
