@@ -1,6 +1,9 @@
 ﻿using System.IO;
+using AngularEshop.Core.Implementations;
+using AngularEshop.Core.Interfaces;
 using AngularEshop.Core.Utilities.Extensions.Connection;
 using AngularEshop.DataLayer.Context;
+using AngularEshop.DataLayer.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -30,7 +33,18 @@ namespace AngularEshop.WebApi
                     .Build()
             );
 
+            #region Add Context
+
             services.AddApplicationDbContext(Configuration);
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
+            #endregion
+
+            #region App Services
+
+            services.AddScoped<IUserService, UserService>();          
+
+            #endregion
 
             /*services.AddDbContext<AngularEshopDbContext>(options =>
             {
@@ -54,7 +68,14 @@ namespace AngularEshop.WebApi
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Users}/{action=Users}/{id?}"
+                );
+            });
+            
         }
     }
 }
