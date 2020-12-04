@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\MrLost\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\MrLost\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_AngularEshop.1364953169.00" t="ExcludeRecursive" />
+    <e p="C:\Workspace\angularEshop\BackEnd\angularEshop" t="IncludeFlat">
+      <e p="AngularEshop.Core" t="IncludeRecursive">
+        <e p="AngularEshop.Core.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Implementations" t="Include">
+          <e p="ProductService.cs" t="Include" />
+          <e p="SliderService.cs" t="Include" />
+          <e p="UserService.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="IProductService.cs" t="Include" />
+          <e p="ISliderService.cs" t="Include" />
+          <e p="IUserService.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="AngularEshop.Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Utilities" t="Include">
+          <e p="Common" t="Include">
+            <e p="JsonResponseStatus.cs" t="Include" />
+          </e>
+          <e p="Extensions" t="Include">
+            <e p="Connection" t="Include">
+              <e p="ConnectionExtension.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="AngularEshop.DataLayer" t="IncludeRecursive">
+        <e p="_01-add_migrations.cmd" t="Include" />
+        <e p="_02-update_db.cmd" t="Include" />
+        <e p="AngularEshop.DataLayer.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Context" t="Include">
+          <e p="AngularEshopDbContext.cs" t="Include" />
+        </e>
+        <e p="Entities" t="Include">
+          <e p="Access" t="Include">
+            <e p="Role.cs" t="Include" />
+            <e p="UserRole.cs" t="Include" />
+          </e>
+          <e p="Account" t="Include">
+            <e p="User.cs" t="Include" />
+          </e>
+          <e p="Common" t="Include">
+            <e p="BaseEntity.cs" t="Include" />
+          </e>
+          <e p="Product" t="Include">
+            <e p="Product.cs" t="Include" />
+            <e p="ProductCategory.cs" t="Include" />
+            <e p="ProductGallery.cs" t="Include" />
+            <e p="ProductSelectedCategory.cs" t="Include" />
+            <e p="ProductVisit.cs" t="Include" />
+          </e>
+          <e p="Site" t="Include">
+            <e p="Slider.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20201202221120_V%mydate%_%mytime%.cs" t="Include" />
+          <e p="20201202221120_V%mydate%_%mytime%.Designer.cs" t="Include" />
+          <e p="20201202221201_initDb.cs" t="Include" />
+          <e p="20201202221201_initDb.Designer.cs" t="Include" />
+          <e p="20201203103718_AddProduct.cs" t="Include" />
+          <e p="20201203103718_AddProduct.Designer.cs" t="Include" />
+          <e p="AngularEshopDbContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="AngularEshop.DataLayer.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repository" t="Include">
+          <e p="GenericRepository.cs" t="Include" />
+          <e p="IGenericRepository.cs" t="Include" />
+        </e>
+      </e>
+      <e p="AngularEshop.sln" t="IncludeFlat" />
+      <e p="AngularEshop.WebApi" t="IncludeRecursive">
+        <e p="AngularEshop.WebApi.csproj" t="IncludeRecursive" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="SiteBaseController.cs" t="Include" />
+          <e p="SliderController.cs" t="Include" />
+          <e p="UsersController.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="AngularEshop.WebApi.AssemblyInfo.cs" t="Include" />
+              <e p="AngularEshop.WebApi.RazorAssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="wwwroot" t="Include">
+          <e p="images" t="Include">
+            <e p="sliders" t="Include">
+              <e p="origin" t="Include">
+                <e p="slide-1.jpg" t="Include" />
+                <e p="slide-2.jpg" t="Include" />
+                <e p="slide-3.jpg" t="Include" />
+                <e p="slide-4.jpg" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

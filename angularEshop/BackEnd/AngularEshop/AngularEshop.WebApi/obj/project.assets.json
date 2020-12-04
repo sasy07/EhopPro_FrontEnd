@@ -4352,7 +4352,9 @@
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "AngularEshop.DataLayer": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Razor": "1.1.0",
           "Microsoft.EntityFrameworkCore": "2.1.1",
+          "Microsoft.EntityFrameworkCore.Design": "2.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
           "Microsoft.EntityFrameworkCore.Tools.DotNet": "2.0.3"
         },
@@ -4368,6 +4370,7 @@
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.1.1",
+          "Microsoft.EntityFrameworkCore.Design": "2.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
           "Microsoft.EntityFrameworkCore.Tools.DotNet": "2.0.3"
         },
@@ -11888,43 +11891,46 @@
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.EntityFrameworkCore >= 2.1.1",
+      "Microsoft.EntityFrameworkCore.Design >= 2.1.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.1",
       "Microsoft.EntityFrameworkCore.Tools.DotNet >= 2.0.3",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MrLost\\.nuget\\packages\\": {}
+    "C:\\Users\\MrLost\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.WebApi\\AngularEshop.WebApi.csproj",
+      "projectUniqueName": "C:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.WebApi\\AngularEshop.WebApi.csproj",
       "projectName": "AngularEshop.WebApi",
-      "projectPath": "D:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.WebApi\\AngularEshop.WebApi.csproj",
+      "projectPath": "C:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.WebApi\\AngularEshop.WebApi.csproj",
       "packagesPath": "C:\\Users\\MrLost\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.WebApi\\obj\\",
+      "outputPath": "C:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.WebApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\MrLost\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\MrLost\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "targetAlias": "netcoreapp2.1",
           "projectReferences": {
-            "D:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.Core\\AngularEshop.Core.csproj": {
-              "projectPath": "D:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.Core\\AngularEshop.Core.csproj"
+            "C:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.Core\\AngularEshop.Core.csproj": {
+              "projectPath": "C:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.Core\\AngularEshop.Core.csproj"
             },
-            "D:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.DataLayer\\AngularEshop.DataLayer.csproj": {
-              "projectPath": "D:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.DataLayer\\AngularEshop.DataLayer.csproj"
+            "C:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.DataLayer\\AngularEshop.DataLayer.csproj": {
+              "projectPath": "C:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.DataLayer\\AngularEshop.DataLayer.csproj"
             }
           }
         }
@@ -11951,6 +11957,10 @@
             "version": "[2.1.2, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
             "target": "Package",
             "version": "[2.1.1, )"
           },

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AngularEshop.DataLayer.Migrations
 {
     [DbContext(typeof(AngularEshopDbContext))]
-    [Migration("20201127180043_InitDB")]
-    partial class InitDB
+    [Migration("20201202221201_initDb")]
+    partial class initDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

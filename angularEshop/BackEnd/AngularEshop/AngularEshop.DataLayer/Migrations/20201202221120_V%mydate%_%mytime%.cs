@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AngularEshop.DataLayer.Migrations
 {
-    public partial class InitDB : Migration
+    public partial class Vmydate_mytime : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

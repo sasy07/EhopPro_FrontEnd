@@ -42,15 +42,11 @@ namespace AngularEshop.WebApi
 
             #region App Services
 
-            services.AddScoped<IUserService, UserService>();          
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ISliderService, SliderService>();
+            services.AddScoped<IProductService, ProductService>();
 
             #endregion
-
-            /*services.AddDbContext<AngularEshopDbContext>(options =>
-            {
-                var connectionString = "ConnectionStrings:AngularEshopConnection:Development";
-                options.UseSqlServer(Configuration[connectionString]);
-            });*/
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -68,6 +64,7 @@ namespace AngularEshop.WebApi
             }
 
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

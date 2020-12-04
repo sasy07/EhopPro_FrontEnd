@@ -107,6 +107,176 @@ namespace AngularEshop.DataLayer.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("AngularEshop.DataLayer.Entities.Product.Product", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreateDate");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
+                    b.Property<string>("ImageName")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
+                    b.Property<bool>("IsDelete");
+
+                    b.Property<bool>("IsExist");
+
+                    b.Property<bool>("IsSpecial");
+
+                    b.Property<DateTime>("LastUpdateDate");
+
+                    b.Property<int>("Price")
+                        .HasMaxLength(100);
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
+                    b.Property<string>("ShortDescription")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("AngularEshop.DataLayer.Entities.Product.ProductCategory", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreateDate");
+
+                    b.Property<bool>("IsDelete");
+
+                    b.Property<DateTime>("LastUpdateDate");
+
+                    b.Property<long?>("ParentId");
+
+                    b.Property<string>("Title");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ParentId");
+
+                    b.ToTable("ProductCategories");
+                });
+
+            modelBuilder.Entity("AngularEshop.DataLayer.Entities.Product.ProductGallery", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreateDate");
+
+                    b.Property<string>("ImageName")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
+                    b.Property<bool>("IsDelete");
+
+                    b.Property<DateTime>("LastUpdateDate");
+
+                    b.Property<long>("ProductId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductGalleries");
+                });
+
+            modelBuilder.Entity("AngularEshop.DataLayer.Entities.Product.ProductSelectedCategory", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreateDate");
+
+                    b.Property<bool>("IsDelete");
+
+                    b.Property<DateTime>("LastUpdateDate");
+
+                    b.Property<long>("ProductCategoryId");
+
+                    b.Property<long>("ProductId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductCategoryId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductSelectedCategories");
+                });
+
+            modelBuilder.Entity("AngularEshop.DataLayer.Entities.Product.ProductVisit", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreateDate");
+
+                    b.Property<bool>("IsDelete");
+
+                    b.Property<DateTime>("LastUpdateDate");
+
+                    b.Property<long>("ProductId");
+
+                    b.Property<string>("UserIp")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductVisits");
+                });
+
+            modelBuilder.Entity("AngularEshop.DataLayer.Entities.Site.Slider", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreateDate");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(1000);
+
+                    b.Property<string>("ImageName")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
+                    b.Property<bool>("IsDelete");
+
+                    b.Property<DateTime>("LastUpdateDate");
+
+                    b.Property<string>("Link")
+                        .HasMaxLength(100);
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sliders");
+                });
+
             modelBuilder.Entity("AngularEshop.DataLayer.Entities.Access.UserRole", b =>
                 {
                     b.HasOne("AngularEshop.DataLayer.Entities.Access.Role", "Role")
@@ -117,6 +287,42 @@ namespace AngularEshop.DataLayer.Migrations
                     b.HasOne("AngularEshop.DataLayer.Entities.Account.User", "User")
                         .WithMany("UserRoles")
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("AngularEshop.DataLayer.Entities.Product.ProductCategory", b =>
+                {
+                    b.HasOne("AngularEshop.DataLayer.Entities.Product.ProductCategory", "ParentCategory")
+                        .WithMany()
+                        .HasForeignKey("ParentId");
+                });
+
+            modelBuilder.Entity("AngularEshop.DataLayer.Entities.Product.ProductGallery", b =>
+                {
+                    b.HasOne("AngularEshop.DataLayer.Entities.Product.Product", "Product")
+                        .WithMany("ProductGalleries")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("AngularEshop.DataLayer.Entities.Product.ProductSelectedCategory", b =>
+                {
+                    b.HasOne("AngularEshop.DataLayer.Entities.Product.ProductCategory", "ProductCategory")
+                        .WithMany("ProductSelectedCategories")
+                        .HasForeignKey("ProductCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("AngularEshop.DataLayer.Entities.Product.Product", "Product")
+                        .WithMany("ProductSelectedCategories")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("AngularEshop.DataLayer.Entities.Product.ProductVisit", b =>
+                {
+                    b.HasOne("AngularEshop.DataLayer.Entities.Product.Product", "Product")
+                        .WithMany("ProductVisits")
+                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

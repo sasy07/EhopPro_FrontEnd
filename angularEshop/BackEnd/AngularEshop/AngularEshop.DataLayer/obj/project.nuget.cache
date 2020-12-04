@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Tx48mIJSUCghU5//08eJ8fiMTWeyQXt1EC59GluELvQmRMhFTql27SNmTn6FqSaUmtpkoxpTfCll3h1PtaHIuA==",
+  "dgSpecHash": "Lhe2PB+3F9WT9YDJzZpI4J+oQ4fij5QfUG/UpA+eu60d7OAPWSkQHEDdx5TYmaMMeel5cMMutfiKddUkNTDguA==",
   "success": true,
-  "projectFilePath": "D:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.DataLayer\\AngularEshop.DataLayer.csproj",
+  "projectFilePath": "C:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.DataLayer\\AngularEshop.DataLayer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MrLost\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
+    "C:\\Users\\MrLost\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\MrLost\\.nuget\\packages\\microsoft.entityframeworkcore\\2.1.1\\microsoft.entityframeworkcore.2.1.1.nupkg.sha512",
     "C:\\Users\\MrLost\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.1.1\\microsoft.entityframeworkcore.abstractions.2.1.1.nupkg.sha512",
     "C:\\Users\\MrLost\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\2.1.1\\microsoft.entityframeworkcore.analyzers.2.1.1.nupkg.sha512",
+    "C:\\Users\\MrLost\\.nuget\\packages\\microsoft.entityframeworkcore.design\\2.1.1\\microsoft.entityframeworkcore.design.2.1.1.nupkg.sha512",
     "C:\\Users\\MrLost\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\2.1.1\\microsoft.entityframeworkcore.relational.2.1.1.nupkg.sha512",
     "C:\\Users\\MrLost\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\2.1.1\\microsoft.entityframeworkcore.sqlserver.2.1.1.nupkg.sha512",
     "C:\\Users\\MrLost\\.nuget\\packages\\microsoft.entityframeworkcore.tools.dotnet\\2.0.3\\microsoft.entityframeworkcore.tools.dotnet.2.0.3.nupkg.sha512",

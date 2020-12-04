@@ -7,3 +7,15 @@ D:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\obj\Debug\
 D:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\obj\Debug\netcoreapp2.1\AngularEshop.DataLayer.csproj.CoreCompileInputs.cache
 D:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\obj\Debug\netcoreapp2.1\AngularEshop.DataLayer.dll
 D:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\obj\Debug\netcoreapp2.1\AngularEshop.DataLayer.pdb
+C:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\bin\Debug\netcoreapp2.1\AngularEshop.DataLayer.deps.json
+C:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\bin\Debug\netcoreapp2.1\AngularEshop.DataLayer.dll
+C:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\bin\Debug\netcoreapp2.1\AngularEshop.DataLayer.pdb
+C:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\obj\Debug\netcoreapp2.1\AngularEshop.DataLayer.csprojAssemblyReference.cache
+C:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\obj\Debug\netcoreapp2.1\AngularEshop.DataLayer.AssemblyInfoInputs.cache
+C:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\obj\Debug\netcoreapp2.1\AngularEshop.DataLayer.AssemblyInfo.cs
+C:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\obj\Debug\netcoreapp2.1\AngularEshop.DataLayer.csproj.CoreCompileInputs.cache
+C:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\obj\Debug\netcoreapp2.1\AngularEshop.DataLayer.dll
+C:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\obj\Debug\netcoreapp2.1\AngularEshop.DataLayer.pdb
+C:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\bin\Debug\netcoreapp2.1\AngularEshop.DataLayer.runtimeconfig.json
+C:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\bin\Debug\netcoreapp2.1\AngularEshop.DataLayer.runtimeconfig.dev.json
+C:\Workspace\angularEshop\BackEnd\AngularEshop\AngularEshop.DataLayer\obj\Debug\netcoreapp2.1\AngularEshop.DataLayer.genruntimeconfig.cache

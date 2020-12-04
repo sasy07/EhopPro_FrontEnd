@@ -1,0 +1,68 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.DataLayer\\AngularEshop.DataLayer.csproj",
+    "projectName": "AngularEshop.DataLayer",
+    "projectPath": "C:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.DataLayer\\AngularEshop.DataLayer.csproj",
+    "outputPath": "C:\\Workspace\\angularEshop\\BackEnd\\AngularEshop\\AngularEshop.DataLayer\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[2.1.1, )"
+        },
+        "Microsoft.EntityFrameworkCore.Design": {
+          "target": "Package",
+          "version": "[2.1.1, )"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "[2.1.1, )"
+        },
+        "Microsoft.EntityFrameworkCore.Tools.DotNet": {
+          "target": "Package",
+          "version": "[2.0.3, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+    }
+  }
+}
